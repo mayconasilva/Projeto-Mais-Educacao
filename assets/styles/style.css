@@ -1,0 +1,115 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Ephesis&family=Martel:wght@300;400;700&family=Work+Sans:ital,wght@0,400;0,500;0,700;1,700&display=swap');
+:root{
+    --color0: #0A00C8;
+    --color2: #FFDA19;
+    --color1: #FF2B19;
+    --color3: #19FF7C;
+    --color4: #FF0000;
+
+    --fontprincipal:'Work Sans', sans-serif;
+    --fontparagrafo: 'Martel', serif;
+    --fontdestaque: 'Bangers', cursive;
+    --fontcitacao: 'Ephesis', cursive;
+}
+*{
+    margin: 0;
+}
+body{
+    margin: auto;
+    font-family: var(--fontprincipal);
+    user-select: text;
+}
+header{
+    padding: 2em;
+    text-align: center;
+    background-color: var(--color0);
+    user-select: none;
+    margin-bottom: 2px;
+}
+header > h1{
+    font-size: 4rem;
+    font-family: var(--fontdestaque);
+    margin: 6px;
+    color: var(--color4);
+    text-shadow: 3px 9px 16px black
+}
+header > p{
+    font-size: 2em;
+    font-family: var(--fontcitacao);
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+header > nav{
+    padding: 5px;
+    margin: 2px;
+}
+header > nav > a{
+    color: var(--color1);
+    font-size: 1.5em;
+    text-decoration: none;
+
+}
+header > nav > a:hover{
+    color: var(--color4);
+    background-color: #00aeff;
+    padding: 2px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+header > nav > a:visited{
+    color: var(--color1);
+}
+main{
+    margin: 0 6%;
+}
+main > section > h1{
+    text-align: center;
+    user-select: text;
+    margin-bottom: 1em;
+    font-size: 3em;
+}
+main > section > h2{
+    font-size: 2.5em;
+    margin-bottom: 1em;
+}
+main > section > p{
+    text-align: justify;
+    text-indent: 20px;
+    font-family: var(--fontparagrafo);
+    line-height: 1.em;
+    font-size: 1.2em;
+}
+main > section > p > a{
+    text-decoration: none;
+    color: black;
+}
+main >section >  p > a:hover{
+    text-decoration: none;
+    color: var(--color4);
+}
+main > section > p > a:visited{
+    text-decoration: none;
+    color: black;
+}
+
+footer{
+    text-align: center;
+    padding: 5px;
+    background-color: var(--color4);
+}
+footer > p{
+    font-size: 1.1em;
+}
+footer > p > a{
+    color: black;
+    text-decoration: none;
+}
+.projetos{
+    width: 10%;
+    border-radius: 300px;
+    box-shadow: 1px 1px 3px black;
+}
+img#adicionar{
+    width: 20%;
+}
