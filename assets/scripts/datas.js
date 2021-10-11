@@ -1,4 +1,4 @@
-function achardata(){
+function achardata() {
 //Pegando informações sobre o dia
 let Data = new Date()
 let dia = Data.getDate()
@@ -11,4 +11,6 @@ let ano = Data.getFullYear()
 //Inserindo na página da web
 let info = document.getElementById("data")
 info.innerHTML= `Hoje são ${dia} de ${meses[mes]} de ${ano} | ${dias[days]}`
+console.log("Data atualizada")
+console.log(`Hoje são ${dia} de ${meses[mes]} de ${ano} | ${dias[days]}`)
 }
